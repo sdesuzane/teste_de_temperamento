@@ -1,0 +1,71 @@
+@import "../../../global.scss";
+
+
+.page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0 7rem;
+        color: black;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            
+        }
+        .title{
+            font-size: 2.5rem;
+            height: 3rem;
+            margin: 2rem;
+            color: $mainColor;
+
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p{
+                color: #4a4a4a;
+                margin: 1.5rem;
+                font-size: 1.4rem;
+                text-align: justify;
+                @include mobile{
+                    font-size: 1rem;
+                }
+            }
+            .link{
+                background-color: $mainColor;
+                opacity: 0.6;
+                width: 20%;
+                height: 60px;
+                border: 1px solid white;
+                border-radius: 25px;
+                margin: 1rem 1rem;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                font-size: 1.4rem;
+                &:hover{
+                    color: white;
+                    opacity: 1;
+                }
+    
+                @include mobile {
+                    width: 70%;
+                    height: 5rem;
+                }
+                &:hover{
+                    background-color: $mainColor;
+                    color: white;
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,127 @@
+@import "../../../global.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background-color: #d1a0ff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+.container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            .right{
+                order: 0;
+            }
+            .left{
+                order: 1;
+            }
+          }
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+            width: 30vw;
+            img{
+                display: none;
+                border-radius: 50%;
+            }
+            h1{
+            margin: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $mainColor;
+            @include mobile{
+                margin: 1rem;
+                font-size: 2.2rem;
+                text-align: center;
+                order: 0;
+            }
+            }
+        @include mobile{
+            width: 80%;
+            img{
+                display: flex;
+                width: 50vw;
+            @include mobile{
+                width: 100%;
+            }
+            }
+
+        }
+        .home-info{
+            margin: 1.5rem;
+            text-align: center;
+            @include mobile{
+                display: none;
+                
+            }
+        }
+        .link{
+            background-color: $mainColor;
+            opacity: 0.6;
+            width: 20%;
+            height: 60px;
+            border: 1px solid white !important;
+            border-radius: 25px;
+            margin: 1rem 1rem;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white !important;
+            font-size: 1.4rem;
+            &:hover{
+                color: white;
+                opacity: 1;
+            }
+
+            @include mobile {
+                width: 70% !important;
+                height: 4rem !important;
+            }
+
+        }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+            img {
+                width: 30vw;
+                border-radius: 50%;
+            }
+
+            @include mobile{
+                width: 100%;
+                order: 1;
+                flex-direction: column;
+                img{
+                    display: none;
+                    width: 50vw;
+                @include mobile{
+                    width: 100%;
+                }
+                }
+            }
+            
+        }
+    }
+}
+
