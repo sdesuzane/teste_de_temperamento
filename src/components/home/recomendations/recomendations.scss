@@ -18,7 +18,7 @@
             font-size: 2.5rem;
             height: 3rem;
             margin: 2rem;
-            color: $mainColor;
+            color: $primary;
 
         }
         .content{
@@ -27,7 +27,7 @@
             justify-content: center;
             flex-direction: column;
             p{
-                color: #4a4a4a;
+                color: white;
                 margin: 1.5rem;
                 font-size: 1.4rem;
                 text-align: justify;
@@ -36,7 +36,7 @@
                 }
             }
             .link{
-                background-color: $mainColor;
+                background-color: $primary;
                 opacity: 0.6;
                 width: 20%;
                 height: 60px;
@@ -62,7 +62,7 @@
                     height: 5rem;
                 }
                 &:hover{
-                    background-color: $mainColor;
+                    background-color: $primary;
                     color: white;
                 }
             }

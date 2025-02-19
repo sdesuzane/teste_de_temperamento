@@ -37,7 +37,7 @@
                 margin: 1.5rem;
                 font-size: 2.5rem;
                 font-weight: bold;
-                color: $mainColor;
+                color: $primary;
 
                 @include mobile {
                     margin: 1rem;
@@ -64,6 +64,14 @@
             .info {
                 margin: 1.5rem;
                 text-align: justify;
+                p {
+                    color: white;
+                    justify-content: center;
+                    display: flex;
+                }
+                strong {
+                    color: $primary;
+                }
 
                 @include mobile {
                     font-size: 1rem;
@@ -72,37 +80,44 @@
                 }
             }
 
+            .button-container {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+    
             .link {
                 width: 50%;
                 padding: 1rem;
                 height: 75px;
                 border: 1px solid black;
                 border-radius: 25px;
-                margin: 1rem 1rem;
+                margin: 1rem auto;
                 transition: all 0.5s ease;
                 cursor: pointer;
                 display: flex;
-                text-align: center;
                 justify-content: center;
                 align-items: center;
                 text-decoration: none;
                 color: black;
                 font-size: inherit;
                 color: inherit;
-
+    
                 &:hover {
                     color: white;
+                    background-color: $primary;
                 }
-
+    
                 @include mobile {
                     font-size: 1rem;
                     width: 50%;
                     height: 20%;
                 }
-
-                &:hover {
-                    background-color: $mainColor;
-                    color: white;
+    
+                .icon {
+                    margin-right: 8px;
+                    font-size: 1.2rem;
+                    background-color: transparent;
                 }
             }
         }

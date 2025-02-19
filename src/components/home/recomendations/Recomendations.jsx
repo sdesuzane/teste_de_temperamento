@@ -8,11 +8,10 @@ export default function Recomendations() {
        <div className="page">
                <div className="content">
                    <h1 className="title">Orientações</h1>
-                    <p><strong>ORIENTAÇÕES:</strong> Recorde suas reações e impressões dos eventos que lhe aconteceram entre 6 e 14 anos de idade, pois é quando somos puro temperamento.
-                    Ao escolher as características que melhor te descrevem, reflita se é você na sua natureza, impulsos, tendências, estrutura (TEMPERAMENTO) ou se não é um comportamento aprendido, caráter, acúmulo de experiências.
-                    Por fim não se precipite. Não use um evento aleatório para se orientar, mais sim sua natureza - reação e impressão, ainda que você esteja educando-os para melhor se relacionar na vida.Bom aprofundamento!
-
-                    </p>
+                    <p>Recorde suas reações e impressões dos eventos que lhe aconteceram entre os 6 e 14 anos de idade, pois é nesse período que somos puro temperamento.
+                    Ao escolher as características que melhor o descrevem, reflita se elas fazem parte da sua natureza, impulsos, tendências e estrutura (TEMPERAMENTO) ou se são comportamentos aprendidos, ligados ao caráter e ao acúmulo de experiências.
+                    Por fim, não se precipite. Não utilize um evento aleatório como base para sua análise, mas sim sua natureza — suas reações e impressões — ainda que você esteja aprendendo a educá-las para melhor se relacionar na vida.
+                    Bom aprofundamento!</p>
                    <Link className="link" to="/questions">Iniciar o teste</Link>
 
                </div>

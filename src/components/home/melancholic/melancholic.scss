@@ -1,116 +1,140 @@
 @import "../../../global.scss";
 
-.home{
+.home {
     background-color: white;
 
-.container{
-    height: auto !important;
+    .container {
+        height: auto !important;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        @include mobile{
+
+        @include mobile {
             flex-direction: column;
             align-items: center;
-            .right{
+
+            .right {
                 order: 0;
             }
-            .left{
+
+            .left {
                 order: 1;
             }
-          }
-        .left{
+        }
+
+        .left {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-size: 1.4rem;
             width: 30vw;
-            img{
+
+            img {
                 display: none;
             }
-            h1{
-            margin: 1.5rem;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: $mainColor;
-            @include mobile{
-                margin: 1rem;
-                font-size: 2.2rem;
-                text-align: center;
-                order: 0;
-            }
-            }
-        @include mobile{
-            width: 80%;
-            img{
-                display: flex;
-                width: 50vw;
-            @include mobile{
-                width: 100%;
-            }
-            }
 
-        }
-        .info{
-            margin: 1.5rem;
-            text-align: justify;
-            @include mobile{
-                font-size: 1rem;
-                margin: 0.5rem;
-                text-align: justify;    
-            }
-        }
-        .link{
-            background-color: $mainColor;
-            opacity: 0.6;
-            width: 20%;
-            height: 60px;
-            border: 1px solid white;
-            border-radius: 25px;
-            margin: 1rem 1rem;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            font-size: 1.4rem;
-            &:hover{
-                color: white;
-                opacity: 1;
+            h1 {
+                margin: 1.5rem;
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: $primary;
+
+                @include mobile {
+                    margin: 1rem;
+                    font-size: 2.2rem;
+                    text-align: center;
+                    order: 0;
+                }
             }
 
             @include mobile {
-                width: 70%;
-                height: 5rem;
+                width: 80%;
+
+                img {
+                    display: flex;
+                    width: 50vw;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+
             }
-            &:hover{
-                background-color: $mainColor;
-                color: white;
+
+            .info {
+                margin: 1.5rem;
+                text-align: justify;
+
+                @include mobile {
+                    font-size: 1rem;
+                    margin: 0.5rem;
+                    text-align: justify;
+                }
+            }
+            .button-container {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .link {
+                width: 50%;
+                padding: 1rem;
+                height: 75px;
+                border: 1px solid black;
+                border-radius: 25px;
+                margin: 1rem auto;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                font-size: inherit;
+                color: inherit;
+    
+                &:hover {
+                    color: white;
+                    background-color: $primary;
+                }
+    
+                @include mobile {
+                    font-size: 1rem;
+                    width: 50%;
+                    height: 20%;
+                }
+    
+                .icon {
+                    margin-right: 8px;
+                    font-size: 1.2rem;
+                    background-color: transparent;
+                }
             }
         }
-        }
-        .right{
+
+        .right {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 50%;
 
-            @include mobile{
+            @include mobile {
                 width: 100%;
                 order: 1;
                 flex-direction: column;
-                img{
+
+                img {
                     display: none;
                     width: 50vw;
-                @include mobile{
-                    width: 100%;
-                }
+
+                    @include mobile {
+                        width: 100%;
+                    }
                 }
             }
-            
+
         }
     }
 }

@@ -7,7 +7,7 @@
 }
 
 .home{
-    background-color: #d1a0ff;
+    background-color: #000;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -41,7 +41,7 @@
             margin: 1.5rem;
             font-size: 2.5rem;
             font-weight: bold;
-            color: $mainColor;
+            color: $primary;
             @include mobile{
                 margin: 1rem;
                 font-size: 2.2rem;
@@ -63,13 +63,16 @@
         .home-info{
             margin: 1.5rem;
             text-align: center;
+            p {
+                color: white;
+            }
             @include mobile{
                 display: none;
                 
             }
         }
         .link{
-            background-color: $mainColor;
+            background-color: $primary;
             opacity: 0.6;
             width: 20%;
             height: 60px;
@@ -86,7 +89,7 @@
             color: white !important;
             font-size: 1.4rem;
             &:hover{
-                color: white;
+                color: white !important;
                 opacity: 1;
             }
 
