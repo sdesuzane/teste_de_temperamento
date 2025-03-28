@@ -4,8 +4,7 @@ import { SlArrowLeft } from "react-icons/sl";
 
 export default function Melancholic() {
     return (
-        <div className="home" id="intro">
-            <div className="container">
+        <div className="result">
                 <div className='left'>
                     <h1>Melancólico</h1>
                     <img src="assets/melancholic.png" alt="Melancólico" />
@@ -33,6 +32,5 @@ export default function Melancholic() {
                     <img src="assets/melancholic.png" alt="Melancólico" />
                 </div>
             </div>
-        </div>
     )
 }

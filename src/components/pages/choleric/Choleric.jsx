@@ -4,8 +4,7 @@ import { SlArrowLeft } from "react-icons/sl";
 
 export default function Choleric() {
     return (
-        <div className="home" id="intro">
-            <div className="container">
+        <div className="result">
                 <div className="left">
                     <h1>Colérico</h1>
                     <img src="assets/chroleric.png" alt="Colérico" />
@@ -35,6 +34,5 @@ export default function Choleric() {
                     <img src="assets/chroleric.png" alt="Colérico" />
                 </div>
             </div>
-        </div>
     );
 }

@@ -5,8 +5,7 @@ import { SlArrowLeft } from "react-icons/sl";
 
 export default function Sanguine() {
     return (
-        <div className="home" id="intro">
-            <div className="container">
+        <div className="result">
             <div className='left'>
                 <h1>Sanguíneo</h1>
                 <img src="assets/sanguine.png" alt="sanguineo" />
@@ -30,6 +29,5 @@ export default function Sanguine() {
                 
             </div>
             </div>
-        </div>
     )
 }

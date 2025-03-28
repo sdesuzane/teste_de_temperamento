@@ -1,21 +1,16 @@
-@import "../../../global.scss";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@mixin mobile {
+    @media (max-width: #{768px}) {
+        @content;
+    }
 }
 
-.home{
-    background-color: #000;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-.container{
+.result{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        background-color: #000;
+        color: white;
+        strong {color:white !important}
         @include mobile{
             flex-direction: column;
             align-items: center;
@@ -32,16 +27,16 @@
             justify-content: center;
             align-items: center;
             font-size: 1.4rem;
-            width: 30vw;
+            width: 50vw;
             img{
                 display: none;
-                border-radius: 50%;
             }
             h1{
             margin: 1.5rem;
             font-size: 2.5rem;
             font-weight: bold;
-            color: $primary;
+            color: #a07e28;
+
             @include mobile{
                 margin: 1rem;
                 font-size: 2.2rem;
@@ -60,44 +55,55 @@
             }
 
         }
-        .home-info{
+        .info{
             margin: 1.5rem;
-            text-align: center;
-            p {
-                color: white;
-            }
+            text-align: justify;
             @include mobile{
-                display: none;
-                
+                font-size: 1rem;
+                margin: 0.5rem;
+                text-align: justify;    
             }
         }
-        .link{
-            background-color: $primary;
-            opacity: 0.6;
-            width: 20%;
-            height: 60px;
-            border: 1px solid white !important;
+        .button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .link {
+            width: 50%;
+            padding: 1rem;
+            height: 75px;
+            border: 1px solid black;
             border-radius: 25px;
-            margin: 1rem 1rem;
+            margin: 1rem auto;
             transition: all 0.5s ease;
             cursor: pointer;
             display: flex;
-            text-align: center;
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            color: white !important;
-            font-size: 1.4rem;
-            &:hover{
-                color: white !important;
-                opacity: 1;
+            color: black;
+            font-size: inherit;
+            color: inherit;
+            background-color: #3ca028;
+
+            &:hover {
+                color: white;
+                background-color: #2a8f2a;
             }
 
             @include mobile {
-                width: 70% !important;
-                height: 4rem !important;
+                font-size: 1rem;
+                width: 50%;
+                height: 20%;
             }
 
+            .icon {
+                margin-right: 8px;
+                font-size: 1.2rem;
+                background-color: transparent;
+            }
         }
         }
         .right{
@@ -105,11 +111,6 @@
             align-items: center;
             justify-content: center;
             width: 50%;
-
-            img {
-                width: 30vw;
-                border-radius: 50%;
-            }
 
             @include mobile{
                 width: 100%;
@@ -125,6 +126,4 @@
             }
             
         }
-    }
 }
-

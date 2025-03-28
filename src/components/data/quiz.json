@@ -1,79 +1,94 @@
 {
     "data": [
         {
-            "question": "Selecione as opções com as quais você se identifica:",
-            "choices": {
-                "answer": [
-                    "Diante de uma ideia, pessoa ou situação, minha reação é intensa e prolongada. Imponho meu ponto de vista com firmeza e por um longo período.",
-                    "Ao me deparar com uma ideia, pessoa ou situação, reajo de forma imediata e explosiva, mas logo cedo e não mantenho minha posição por muito tempo.",
-                    "Quando enfrento uma nova ideia, pessoa ou situação, permaneço sereno, observo e ajo no momento certo, sem me deixar abalar internamente.",
-                    "Minha reação inicial é discreta, mas cresce gradualmente em intensidade. Sei como responder e o que dizer, mas, na hora, fico em silêncio.",
-                    "Minhas emoções permanecem por muito tempo. Guardo o que aconteceu e posso reviver o sentimento por um período prolongado.",
-                    "Minhas emoções passam rapidamente. Não fico preso ao que aconteceu e consigo relevar com facilidade, sem carregar a sensação por muito tempo.",
-                    "Sou firme.",
-                    "Sou frio.",
-                    "Sou observador.",
-                    "Choro com facilidade e consigo sorrir ao mesmo tempo.",
-                    "Sou falante.",
-                    "Tenho necessidade de afeto.",
-                    "Sou impulsivo (faço e depois penso).",
-                    "Sou analítico.",
-                    "Sou calculista.",
-                    "Sou extremamente crítico e exigente.",
-                    "Me sinto culpado e injustiçado.",
-                    "Sou dominante.",
-                    "Sou imponente.",
-                    "Tenho uma opinião forte (dificilmente mudo de ideia).",
-                    "Sou persuasivo (consigo convencer as pessoas sobre ideias).",
-                    "Sou decidido.",
-                    "Costumo dar ordens.",
-                    "Sou desconfiado.",
-                    "Sou pouco sociável.",
-                    "Sou pessimista (tenho tendência a ver mais o lado negativo).",
-                    "Sou apaziguador (fujo dos conflitos).",
-                    "Me sinto bem calado.",
-                    "Sou perfeccionista.",
-                    "Sou apático nas expressões.",
-                    "Sou inflexível (não lido bem com mudanças) e demoro para agir.",
-                    "Sou concentrado.",
-                    "Sou distraído.",
-                    "Sou sensível (sinto tudo com profundidade).",
-                    "Sou dramático.",
-                    "Tenho dificuldade de ceder, ainda mais se eu achar que estou correto.",
-                    "Sou amigável (faço amizade com facilidade).",
-                    "Sou paciente.",
-                    "Sou manso.",
-                    "Sou indeciso (tenho dificuldade para tomar decisões).",
-                    "Demoro para expressar minha opinião.",
-                    "Demoro para me irritar.",
-                    "Sou determinada (quando quero algo, faço até conquistar).",
-                    "Sou criativo (tenho muitas ideias).",
-                    "Sou ambicioso.",
-                    "Sou conformado (tenho pouca força de vontade).",
-                    "Sou indisciplinado.",
-                    "Sou egocêntrico (me preocupo mais com os meus interesses).",
-                    "Sou egoísta (meu bem-estar sempre em primeiro lugar).",
-                    "Sou emocionalmente instável.",
-                    "Sigo metas e objetivos.",
-                    "Sou extrovertido.",
-                    "Sou reativo/explosivo.",
-                    "Me sinto autossuficiente.",
-                    "Sou desorganizado.",
-                    "Penso demais e me preocupo excessivamente.",
-                    "Tenho tendência à tristeza.",
-                    "Tenho tendência ao sofrimento.",
-                    "Sou alegre.",
-                    "Sou otimista.",
-                    "Sou racional.",
-                    "Sou reservado.",
-                    "Sou emocionalmente equilibrado.",
-                    "Sou inconstante (começo e não termino)."
-                ]
-            },
-            "sanguine": [3, 7, 11, 12, 13, 14, 34, 36, 38, 41, 45, 48, 51, 53, 54, 56, 60, 61, 65],
-            "choleric": [2, 8, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 37, 44, 46, 49, 52, 53, 54, 55, 60],
-            "melancholic": [5, 6, 8, 10, 17, 18, 25, 26, 27, 29, 30, 32, 33, 35, 37, 42, 57, 58, 59, 63],
-            "phlegmatic": [4, 9, 10, 15, 26, 28, 29, 31, 33, 39, 40, 42, 43, 47, 50, 62, 63, 64]
+            "question": "Diante de alguma ideia contrária às minhas convicções, pessoa ou situação, minha reação é:",
+            "choices": [
+                { "choice": "Intensa e prolongada. Imponho meu ponto de vista com firmeza.", "answer": 1 },
+                { "choice": "Imediata e explosiva, mas passageira.", "answer": 2 },
+                { "choice": "Serena e observadora, agindo no momento certo.", "answer": 3 },
+                { "choice": "Discreta no início, mas crescendo gradualmente em intensidade.", "answer": 4 }
+            ]
+        },
+        {
+            "question": "Sobre sua reação ao ser apresentado a uma ideia, pessoa ou situação, você reage:",
+            "choices": [
+                { "choice": "Rapidamente (Impulsivo).", "answer": 2 },
+                { "choice": "Permanece calmo e espera para agir.", "answer": 3 },
+                { "choice": "Reage intensamente.", "answer": 1 },
+                { "choice": "Não reage inicialmente, mas sua reação cresce gradualmente.", "answer": 4 }
+            ]
+        },
+        {
+            "question": "Na maioria das vezes, meu comportamento é:",
+            "choices": [
+                { "choice": "Firme.", "answer": 1 },
+                { "choice": "Frio.", "answer": 3 },
+                { "choice": "Observador.", "answer": 4 },
+                { "choice": "Falante.", "answer": 2 }
+            ]
+        },
+        {
+            "question": "Minhas emoções e reações nas relações (trabalho, filhos, cônjuge, amigos):",
+            "choices": [
+                { "choice": "Penso antes de expressar minha opinião.", "answer": 3 },
+                { "choice": "Sou impulsivo (faço e depois penso).", "answer": 2 },
+                { "choice": "Me sinto culpado e injustiçado quando algo sai diferente do planejado.", "answer": 4 },
+                { "choice": "Tenho opinião forte e dificilmente mudo de ideia.", "answer": 1 }
+            ]
+        },
+        {
+            "question": "Meu estilo de convivência e influência:",
+            "choices": [
+                { "choice": "Tenho necessidade de afeto.", "answer": 2 },
+                { "choice": "Sou persuasivo e consigo convencer as pessoas.", "answer": 1 },
+                { "choice": "Sou pessimista e vejo mais o lado negativo.", "answer": 4 },
+                { "choice": "Sou apaziguador e evito conflitos.", "answer": 3 }
+            ]
+        },
+        {
+            "question": "Como me sinto e me comporto na presença dos outros:",
+            "choices": [
+                { "choice": "Me sinto bem calado.", "answer": 4 },
+                { "choice": "Sou apático nas expressões.", "answer": 3 },
+                { "choice": "Sou falante, mas também posso ser distraído.", "answer": 2 },
+                { "choice": "Sou dominante e costumo assumir a liderança.", "answer": 1 }
+            ]
+        },
+        {
+            "question": "Diante de uma situação em que preciso me posicionar:",
+            "choices": [
+                { "choice": "Tenho dificuldade de ceder, ainda mais se achar que estou certo.", "answer": 1 },
+                { "choice": "Penso demais e me preocupo excessivamente.", "answer": 4 },
+                { "choice": "Sou conformado e tenho pouca força de vontade.", "answer": 3 },
+                { "choice": "Sou egocêntrico e me preocupo mais com meus interesses.", "answer": 2 }
+            ]
+        },
+        {
+            "question": "Diante de sonhos, projetos e relacionamentos, me enxergo como uma pessoa:",
+            "choices": [
+                { "choice": "Ambiciosa.", "answer": 1 },
+                { "choice": "Criativa.", "answer": 2 },
+                { "choice": "Paciente.", "answer": 3 },
+                { "choice": "Analítica e atenta aos detalhes.", "answer": 4 }
+            ]
+        },
+        {
+            "question": "Quando se trata de executar tarefas, compromissos e prazos, eu:",
+            "choices": [
+                { "choice": "Sigo metas e objetivos.", "answer": 1 },
+                { "choice": "Sou inconstante.", "answer": 2 },
+                { "choice": "Preciso encontrar sentido para me movimentar com determinação.", "answer": 3 },
+                { "choice": "Analiso todos os detalhes antes de agir.", "answer": 4 }
+            ]
+        },
+        {
+            "question": "Quem convive comigo diz que sou uma pessoa:",
+            "choices": [
+                { "choice": "Otimista.", "answer": 2 },
+                { "choice": "Determinada e com opinião forte.", "answer": 1 },
+                { "choice": "Reservada e observadora.", "answer": 3 },
+                { "choice": "Dramática e com tendência à tristeza.", "answer": 4 }
+            ]
         }
     ]
 }
