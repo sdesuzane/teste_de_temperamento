@@ -21,6 +21,7 @@
         }
         label.radio {
             background-color: #e0cb9a !important;
+            width: 40vw;
             border-radius: 8px;
             display: block;
             text-align: left;
@@ -29,6 +30,9 @@
             font-size: 18px;
             &:hover {
                 background-color: #bea569 !important;
+            }
+            @include mobile {
+                width: 90vw;
             }
         }
     

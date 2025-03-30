@@ -105,6 +105,7 @@ export default function Questions({ data, numberOfQuestions, onSetActiveQuestion
                     </div>
                     {error && <div className="has-text-danger">{error}</div>}
                     <div className="pagination-buttons">
+                        {questionIndex != 0 && (
                         <button
                             className="pagination-button is-light"
                             onClick={() => onSetActiveQuestion((prev) => Math.max(prev - 1, 0))}
@@ -112,6 +113,7 @@ export default function Questions({ data, numberOfQuestions, onSetActiveQuestion
                         >
                             Anterior
                         </button>
+                        )}
                         {questionIndex < numberOfQuestions - 1 && (
                             <button
                                 className="pagination-button is-primary"
