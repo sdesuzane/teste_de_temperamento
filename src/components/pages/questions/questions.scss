@@ -10,7 +10,7 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: none !important;
-        height: 100vh;
+        min-height: 100dvh;
         width: 100vw;
         background-color: #000;
         padding: 2rem 0;
@@ -32,7 +32,7 @@
                 background-color: #bea569 !important;
             }
             @include mobile {
-                width: 90vw;
+                width: 80vw;
             }
         }
     
