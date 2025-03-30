@@ -5,28 +5,19 @@
 }
 
 
-.page{
+    .recomendations{
+        background-color: #000;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: black;
-        @include mobile{
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            
-        }
+        flex-direction: column;
+        min-height: 100dvh;
+        padding: 5vw;
         .title{
             font-size: 2.5rem;
             color: #a07e28;
-
         }
-        .content{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            p{
+        p{
                 color: white;
                 margin: 1.5rem;
                 font-size: 1.4rem;
@@ -35,36 +26,35 @@
                     font-size: 1rem;
                 }
             }
-            .link{
-                background-color: #3ca028;
-                opacity: 1;
-                width: 20%;
-                height: 60px;
-                border: 1px solid white;
-                border-radius: 25px;
-                margin: 1rem 1rem;
-                transition: all 0.5s ease;
-                cursor: pointer;
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
+        .link{
+            background-color: #3ca028;
+            opacity: 1;
+            width: 20%;
+            height: 60px;
+            border: 1px solid white;
+            border-radius: 25px;
+            margin: 1rem 1rem;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+            &:hover{
                 color: white;
-                font-size: 1.4rem;
-                &:hover{
-                    color: white;
-                    opacity: 1;
-                }
-    
-                @include mobile {
-                    width: 70%;
-                    height: 5rem;
-                }
-                &:hover{
-                    background-color: #2a8f2a;
-                    color: white;
-                }
+                opacity: 1;
+            }
+
+            @include mobile {
+                width: 70%;
+                height: 5rem;
+            }
+            &:hover{
+                background-color: #2a8f2a;
+                color: white;
             }
         }
     }

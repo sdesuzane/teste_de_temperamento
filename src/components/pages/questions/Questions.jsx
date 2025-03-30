@@ -87,7 +87,7 @@ export default function Questions({ data, numberOfQuestions, onSetActiveQuestion
     };
 
     return (
-                <div className="content">
+                <div className="questions">
                     <h2 className="title">{data.question}</h2>
                     <div className="control" ref={radiosWrapper}>
                         {data.choices.map((choice, index) => (
@@ -105,7 +105,7 @@ export default function Questions({ data, numberOfQuestions, onSetActiveQuestion
                     </div>
                     {error && <div className="has-text-danger">{error}</div>}
                     <div className="pagination-buttons">
-                        {questionIndex != 0 && (
+                        {questionIndex !== 0 && (
                         <button
                             className="pagination-button is-light"
                             onClick={() => onSetActiveQuestion((prev) => Math.max(prev - 1, 0))}
